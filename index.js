@@ -1,4 +1,4 @@
-const evenOrOdd = (number) => {
+const oddishOrEvenish = (number) => {
   let sum = 0
 
   while (number > 0) {
@@ -22,11 +22,11 @@ const randomNumber = () => {
 
 if (process.argv.length > 2) {
   const userNumber = process.argv[2]
-  const result = evenOrOdd(userNumber)
+  const result = oddishOrEvenish(userNumber)
   console.log(`${userNumber} is ${result}`)
   return
 }
 
 const random = randomNumber()
-const result = evenOrOdd(random)
+const result = oddishOrEvenish(random)
 console.log(`${random} is ${result}`)
